@@ -1,0 +1,90 @@
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+form input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+form .form-control.error input,
+form .form-control.error textarea {
+  border-color: #f44336;
+}
+
+form .form-control.error small {
+  visibility: visible;
+  color: #f44336;
+  font-size: 14px;
+}
+
+form .form-control.success input,
+form .form-control.success textarea {
+  border-color: #4CAF50;
+}
+
+form .form-control.success small {
+  visibility: hidden;
+  color: #4CAF50;
+  font-size: 14px;
+}
+
+.contact-form .required-label {
+  color: #ff0000;
+  font-weight: 400;
+}
+
+.form-group {
+  position: relative;
+  padding-top: 20px;
+}
+
+div.invalid-feedback {
+  border: solid thin red;
+  position: absolute;
+  left: 0;
+  bottom:-25px;
+  width: 100%;
+  padding: .2em;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+input.invalid~div.feedback {
+  display: block;
+}
+
+input:invalid {
+  border: thin solid red;
+}
